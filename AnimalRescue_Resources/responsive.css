@@ -1,0 +1,79 @@
+/* Responsive layout for screens with width <= 600px */
+@media only screen and (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+
+  header nav img {
+    width: 40px; /* Smaller logo */
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  header nav ul li {
+    padding: 0.5rem 1rem; /* Spacing for menu items */
+  }
+
+  .header-title {
+    width: 100%;
+    padding: 3em 0;
+  }
+
+  .header-title h1 {
+    font-size: 28px;
+    padding-bottom: 0.5em;
+  }
+
+  .our-dogs-wrapper,
+  .contact {
+    width: 90%;
+    padding: 1.5rem 0;
+  }
+
+  .our-dogs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .our-dogs ul li img {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+  }
+
+  .helpNeed ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .helpNeed li {
+    flex: 0 0 80%;
+    margin-bottom: 1.5rem;
+  }
+
+  .helpNeed li img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .contact {
+    width: 100%;
+    color: white;
+    background-color: #588157;
+  }
+
+  footer {
+    padding: 0.5rem 0;
+  }
+}
